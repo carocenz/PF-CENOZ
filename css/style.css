@@ -1,0 +1,331 @@
+/*general*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body*/
+body{
+    background-color: #10101010;
+    display: grid;
+    margin: 0%;
+    padding: 100px 0 0 0;
+    min-height: 100vh;
+}
+
+/*header*/
+header{
+    width: 50%;
+    background-color: #000005;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    justify-self: center;
+    text-align: center;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-padre {
+    justify-self: center;
+    align-self: center;
+}
+
+.nav li ul {
+    background-color: black;
+}
+
+/*para las listas - el estilo que le sacamos con el 'none' son los marcadores (puntitos) de cada palabra*/
+ul, ol{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+/*todos los elementos a que estén dentro de li que estén dentro de nav van a tener estas caracteristicas*/
+/*el color es el del texto, el text decoration es el subrayado*/
+/*el padding establece el área de relleno en los cuatro lados de un elemento a la vez*/
+/*el display en block ordena los elementos en bloque para que no se pisen entre si*/
+.nav li a{
+    background-color: #000005;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border: none;
+    border-radius: 15px;
+}
+
+/*hover se usa para modificar algo cuando pasamos el mouse*/
+/*en este caso se le pone ese color para que cuando el mouse pase por la palabra que se el fondo sea gris */
+.nav li a:hover {
+    background-color: #434343;
+}
+
+/*los li que estan directamente dentro de nav (submenu) van a tener esas propiedades: en este caso para tener forma*/
+/*para darle forma y que los li principales (generales) del nav se ordenen horizontalmente -horizontalmente para left porque elegimos left-*/
+.nav > li{
+    float: left;
+
+}
+
+/*los ul que están dentro de li que están dentro de nav (sub sub menu). ponemos display none para que los sub sub menu se pongan dentro de los submenu*/
+/*position absolute es para que el cuadrado del menu esté acorde al tamaño de la palabra de la que se despliega -pueden quedar empalmados los menu desplegables-*/
+/*en este punto desaparecen los menu desplegables y ahi se arma .nav li:hover > ul */
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+/*los li que están dentro de nav pero que cuando pasamos el mouse están con clase hover y directos (>) de ul*/
+/*con esta indicación los submenu desaparecidos con .nav li ul van a volver a aparecer pero los sub submenus van a estar mal desplegados por eso se crea  .nav li ul li*/
+.nav li:hover > ul {
+    display: block;
+}
+
+/*los li que estén dentro de ul que estén dentro de li*/
+/*se cambia la posición relativa para que los sub sub menú se desplieguen bien*/
+/*al ser posición relativa se pueden modificar los sub sub menu en .nav li ul li ul*/
+.nav li ul li {
+    position: relative;
+}
+
+/*para modificar los .nav li ul li*/
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+/*al darle position absolute pierde sus medidas entonces se le da el width del 100% pero ésto solo sirve para cuando hay poco contenido en la página*/
+.login {
+    width: 100%;
+    text-align: right;
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000005;
+}
+
+
+/*main*/
+main {
+    width: 50%;
+    padding: 0%;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+h2 {
+    text-align: center;
+    color: #434343;
+}
+
+.container {
+    justify-self: right;
+}
+
+.buscador {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+/*social icons*/
+.social-icons {
+    display: grid;
+    position: fixed;
+    top: 50%;
+    /*transform: para centrar los position absolute o position fixed*/
+    transform: translateY(-50%);
+    z-index: 1;
+    /*left px para separar los iconos del borde*/
+    left: 2px;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    color: rgb(53, 100, 255);
+}
+
+.fa-instagram {
+
+    color: black;
+}
+
+.fa-reddit {
+
+    color: orangered;
+}
+
+.fondo-celeste {
+    background-color: #3B5998;
+}
+
+#letra-verde {
+    color: lightgreen;
+    text-decoration: line-through;
+
+}
+
+.letra-grande {
+    font-size: 30px;
+}
+
+#section-index {
+    padding: 15px;
+}
+
+/*footer*/
+#main-footer {
+    color: white;
+    background-color: #000005;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    height: fit-content;
+    align-self: end;
+    padding: 0 10px;
+
+}
+
+#main-footer a {
+    align-self: center;
+    justify-self: left;
+
+}
+
+/*contacto*/
+
+#form {
+    text-align: left;
+    background-color:#10101010;
+}
+
+/*nosotros*/
+.nosotros-buscador {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nosotros-container {
+    justify-self: right;
+}
+
+.iframes-nos {
+    padding: 100px;
+    margin: 0;
+
+}
+
+/*CONCIENTIZACION*/
+
+.img-ind {
+    padding: 100px;
+    margin: 0;
+
+}
+
+/*MAS INFO*/
+#productos-masinfo {
+    margin-top: 50px;
+}
+
+.padre-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 60px;
+    justify-content: center;
+}
+
+.orden1 {
+    order: 2;
+}
+
+.orden2 {
+    order: 1;
+}
+
+.card h4, .card p, .card button {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card button {
+    border: none;
+    padding: 8px 15px;
+    background-color: #3B5998;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.section-masinfo {
+    padding: 30px;
+}
+
+
+.peligro {
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+    width: 120px;
+    background-color: #3B5998;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #434343;
+    border: 5px solid black;
+
+}
+
+h4 {
+    color: #000005;
+    text-align: center;
+
+}
+
+a button p {
+    color: #000005;
+}
