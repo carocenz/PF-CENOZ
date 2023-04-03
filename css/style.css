@@ -1,6 +1,6 @@
 /*general*/
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*body*/
@@ -134,13 +134,13 @@ h2 {
     color: #434343;
 }
 
-.container {
-    justify-self: right;
-}
 
 .buscador {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 60px;
+    width: 70%;
+    justify-self: center;
+    height: 40px;
 }
 
 
@@ -206,7 +206,24 @@ h2 {
 }
 
 #section-index {
+    display: grid;
     padding: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (12, 1fr);
+}
+
+.flex-padre {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: fit-content;
+    border: solid 5px #84a8f3;
 }
 
 /*footer*/
@@ -228,39 +245,43 @@ h2 {
 
 }
 
-/*contacto*/
-
-#form {
-    text-align: left;
-    background-color:#10101010;
-}
-
-/*nosotros*/
-.nosotros-buscador {
+.todos-buscador {
+    width: 300px;
+    height: 20px;
     display: grid;
     grid-template-columns: auto auto;
+    justify-self: center;
 }
 
-.nosotros-container {
-    justify-self: right;
-}
+
+/*NOSOTROS*/
 
 .iframes-nos {
-    padding: 100px;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    padding: 50px 0 50px 0;
 
 }
+
+
 
 /*CONCIENTIZACION*/
 
-.img-ind {
-    padding: 100px;
-    margin: 0;
-
+.grilla-ind {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    height: fit-content;
 }
 
 /*MAS INFO*/
-#productos-masinfo {
+#ambiente-masinfo {
     margin-top: 50px;
 }
 
@@ -329,3 +350,15 @@ h4 {
 a button p {
     color: #000005;
 }
+
+
+/*CONTACTO*/
+
+#form {
+    text-align: left;
+    background-color:#10101010;
+    margin: 30px;
+
+}
+
+
