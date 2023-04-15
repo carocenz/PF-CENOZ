@@ -246,11 +246,18 @@ h2 {
 }
 
 .todos-buscador {
-    width: 300px;
-    height: 20px;
     display: grid;
     grid-template-columns: auto auto;
+    width: 300px;
+    height: 20px;
     justify-self: center;
+
+    display: grid;
+    grid-template-columns: auto 60px;
+    width: 70%;
+    justify-self: center;
+    height: 40px;
+
 }
 
 
@@ -357,7 +364,7 @@ a button p {
 #form {
     text-align: left;
     background-color:#10101010;
-    margin: 30px;
+    margin-top: 30px;
 
 }
 
