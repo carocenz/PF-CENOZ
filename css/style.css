@@ -13,12 +13,12 @@ body{
 }
 
 /*header*/
-header{
-    width: 50%;
+header {
+    width: 100%;
     background-color: #000005;
     padding: 0%;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 50px 1fr;
     justify-self: center;
     text-align: center;
     height: fit-content;
@@ -27,16 +27,45 @@ header{
     z-index: 1;
 }
 
-header a {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1025px) {
+    header {
+        width: 70%;
+        background-color: #000005;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        justify-self: center;
+        text-align: center;
+        height: fit-content;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
 }
+
+header a {
+    justify-self: start;
+}
+
+@media screen and (min-width: 1025px) {
+    header a {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+}
+
 
 .nav-padre {
     justify-self: center;
     align-self: center;
+    grid-template-columns: 90% 10%;
+    display: grid;
+    height: fit-content;
+    position: initial;
+    width: 100%;
 }
+
 
 .nav li ul {
     background-color: black;
@@ -47,6 +76,7 @@ ul, ol{
     list-style: none;
     padding: 0%;
     margin: 0%;
+    justify-self: center;
 }
 
 /*todos los elementos a que estén dentro de li que estén dentro de nav van a tener estas caracteristicas*/
@@ -61,6 +91,7 @@ ul, ol{
     display: block;
     border: none;
     border-radius: 15px;
+    font-size: 1rem;
 }
 
 /*hover se usa para modificar algo cuando pasamos el mouse*/
@@ -83,7 +114,7 @@ ul, ol{
     display: none;
     position: absolute;
     min-width: 140px;
-}
+} 
 
 /*los li que están dentro de nav pero que cuando pasamos el mouse están con clase hover y directos (>) de ul*/
 /*con esta indicación los submenu desaparecidos con .nav li ul van a volver a aparecer pero los sub submenus van a estar mal desplegados por eso se crea  .nav li ul li*/
@@ -94,15 +125,15 @@ ul, ol{
 /*los li que estén dentro de ul que estén dentro de li*/
 /*se cambia la posición relativa para que los sub sub menú se desplieguen bien*/
 /*al ser posición relativa se pueden modificar los sub sub menu en .nav li ul li ul*/
-.nav li ul li {
+/*.nav li ul li {
     position: relative;
 }
 
 /*para modificar los .nav li ul li*/
-.nav li ul li ul {
+/*.nav li ul li ul {
     right: -140px;
     top: 0px;
-}
+}* */
 
 /*al darle position absolute pierde sus medidas entonces se le da el width del 100% pero ésto solo sirve para cuando hay poco contenido en la página*/
 .login {
@@ -111,19 +142,25 @@ ul, ol{
     display: grid;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #000005;
+    justify-content: flex-end;
 }
 
 
 /*main*/
 main {
-    width: 50%;
+    width: 100%;
     padding: 0%;
     display: grid;
     justify-content: center;
     justify-self: center;
 
 }
-
+@media screen and (min-width: 1025px) {
+    /*mobile first*/
+    main{
+        width: 50%;
+    }
+}
 h1 {
     text-align: center;
     color: cornflowerblue;
@@ -138,7 +175,6 @@ h2 {
 .buscador {
     display: grid;
     grid-template-columns: auto 60px;
-    width: 70%;
     justify-self: center;
     height: 40px;
 }
@@ -215,7 +251,7 @@ h2 {
 .flex-padre {
     display: flex;
     flex-flow: row nowrap;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
@@ -224,6 +260,12 @@ h2 {
     margin: 5px;
     height: fit-content;
     border: solid 5px #84a8f3;
+}
+
+@media screen and (min-width: 1025px) {
+    .flex-padre{
+        flex-direction: row;
+    }
 }
 
 /*footer*/
@@ -265,26 +307,47 @@ h2 {
 
 .iframes-nos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-self: center;
     justify-items: center;
     align-items: center;
     padding: 50px 0 50px 0;
-
 }
 
+@media screen and (min-width: 1025px) {
+    .iframes-nos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        padding: 50px 0 50px 0;
+    }
+}
 
 
 /*CONCIENTIZACION*/
 
 .grilla-ind {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     padding: 15px 0 15px 0;
     height: fit-content;
+}
+
+@media screen and (min-width: 1025px) {
+    .grilla-ind {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        padding: 15px 0 15px 0;
+        height: fit-content;
+    }
 }
 
 /*MAS INFO*/
@@ -293,12 +356,22 @@ h2 {
 }
 
 .padre-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     margin-top: 30px;
     gap: 60px;
     justify-content: center;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+        gap: 60px;
+        justify-content: center;
+    }
 }
 
 .orden1 {
@@ -328,8 +401,14 @@ h2 {
 
 .section-masinfo {
     padding: 30px;
+    text-align: center;
 }
 
+@media screen and (min-width: 1025px) {
+    .section-masinfo {
+        padding: 30px;
+    }
+}
 
 .peligro {
     font-size: 15px;
@@ -367,5 +446,8 @@ a button p {
     margin-top: 30px;
 
 }
+
+
+
 
 
