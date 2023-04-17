@@ -8,8 +8,15 @@ body{
     background-color: #10101010;
     display: grid;
     margin: 0%;
-    padding: 100px 0 0 0;
+    padding: 0%;
     min-height: 100vh;
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        padding: 100px 0 0 0;
+
+    }
 }
 
 /*header*/
@@ -22,7 +29,7 @@ header {
     justify-self: center;
     text-align: center;
     height: fit-content;
-    position: fixed;
+    position: initial;
     top: 0;
     z-index: 1;
 }
@@ -174,11 +181,23 @@ h2 {
 
 .buscador {
     display: grid;
-    grid-template-columns: auto 60px;
+    grid-template-columns: 80% 20%;
     justify-self: center;
     height: 40px;
 }
 
+@media screen and (min-width: 1025px) {
+    .buscador {
+        display: grid;
+        grid-template-columns: auto 60px;
+        justify-self: center;
+        height: 40px;
+    }
+}
+
+.buscador__input {
+    width: 100%
+}
 
 /*social icons*/
 .social-icons {
