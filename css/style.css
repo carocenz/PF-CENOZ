@@ -90,7 +90,7 @@ ul, ol{
 /*el color es el del texto, el text decoration es el subrayado*/
 /*el padding establece el área de relleno en los cuatro lados de un elemento a la vez*/
 /*el display en block ordena los elementos en bloque para que no se pisen entre si*/
-.nav-padre__nav li a{
+.navbar-collapse li a{
     background-color: #000005;
     color: #ffffff;
     text-decoration: none;
@@ -103,7 +103,7 @@ ul, ol{
 
 /*hover se usa para modificar algo cuando pasamos el mouse*/
 /*en este caso se le pone ese color para que cuando el mouse pase por la palabra que se el fondo sea gris */
-.nav-padre__nav li a:hover {
+.navbar-collapse li a:hover {
     background-color: #434343;
 }
 

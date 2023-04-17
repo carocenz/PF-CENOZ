@@ -14,23 +14,39 @@
     <title>Gestion Ambiental</title>
 </head>
 <body>
-    <header id="arriba" class="clase-arriba">
-        <a href="../index.html"><img src="../img/logo.jpg" alt="Logo Ambiental" title="Este es el logo de la página" height="50" width="50"></a>
-        <div class="nav-padre">
-            <ul class="nav-padre__nav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a>
-                <li><a href="concientizacion.html">Concientizacion</a></li>
-                <li><a href="masinfo.html">Mas info</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="Logo Ambiental" title="Este es el logo de la página" height="50" width="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white lg-li-hover" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="concientizacion.html">Concientizacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="masinfo.html">Más info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
             </ul>
-            <a class="nav-padre__login">
-                <input type="button" value="Login">
-            </a>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit">Login</button>
+            </form>
+          </div>
         </div>
-
-    </header>
-
+      </nav>
 
 <main>    
 
@@ -52,7 +68,7 @@
 
 
     <section id="ambiente-masinfo">
-        <div class="padre-cards">
+        <div class="padre-cards row">
             <div class="padre-cards__card padre-cards__orden2">
                 <img src="../img/qs1.jpg" alt="Link1" width="300px" height="250px" class="card-image">
                 <h4>Link 1</h4>
