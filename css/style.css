@@ -346,6 +346,13 @@ h2 {
     }
 }
 
+.iframes-nos__img1 {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
 
 /*CONCIENTIZACION*/
 
@@ -431,11 +438,22 @@ h2 {
 
 .peligro {
     font-size: 15px;
-    position: absolute;
+    position: initial;
     top: 20px;
     left: 80%;
-    width: 120px;
+    width: 100%;
     background-color: #3B5998;
+}
+
+@media screen and (min-width: 1025px) {
+    .peligro {
+        font-size: 15px;
+        position: absolute;
+        top: 20px;
+        left: 80%;
+        width: 120px;
+        background-color: #3B5998;
+    }
 }
 
 .padre-cards__card {
