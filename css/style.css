@@ -338,6 +338,11 @@ img {
     height: auto;
 }
 
+.container {
+    width: 80vw;
+
+}
+
 /*MAS INFO*/
 #ambiente-masinfo {
     margin-top: 50px;
@@ -436,23 +441,23 @@ a button p {
     color: #000005;
 }
 
+.padre-cards__card p {
+    color: rgb(255, 252, 246);
+}
+
 
 /*CONTACTO*/
 
 #form {
     width: 100%;
     text-align: left;
-    background-color:#10101010;
+    background-color:#80ADA0;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
 form input, form textarea {
     width: 100%;
+    border-radius: 15px;
 }
 
-
-.container {
-    width: 80vw;
-    
-}
