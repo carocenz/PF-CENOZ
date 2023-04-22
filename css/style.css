@@ -5,14 +5,14 @@
 
 /*body*/
 body{
-    background-color: #10101010;
+    background-color: rgb(255, 252, 246);
     display: grid;
     margin: 0%;
     padding: 0%;
     min-height: 100vh;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     body{
         padding: 100px 0 0 0;
 
@@ -34,7 +34,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     header {
         width: 70%;
         background-color: #000005;
@@ -54,7 +54,7 @@ header a {
     justify-self: start;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     header a {
         display:flex;
         justify-content: center;
@@ -62,37 +62,25 @@ header a {
         }
 }
 
-
-.nav-padre {
-    justify-self: center;
-    align-self: center;
-    grid-template-columns: 90% 10%;
-    display: grid;
-    height: fit-content;
-    position: initial;
-    width: 100%;
-}
-
-
-.nav-padre__nav li ul {
-    background-color: black;
-}
-
 /*para las listas - el estilo que le sacamos con el 'none' son los marcadores (puntitos) de cada palabra*/
-ul, ol{
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-    justify-self: center;
-}
-
 /*todos los elementos a que estén dentro de li que estén dentro de nav van a tener estas caracteristicas*/
 /*el color es el del texto, el text decoration es el subrayado*/
 /*el padding establece el área de relleno en los cuatro lados de un elemento a la vez*/
 /*el display en block ordena los elementos en bloque para que no se pisen entre si*/
+
+.navbar {
+    background-color: #80ADA0;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        background-color: #80ADA0;
+    }
+}
+
 .navbar-collapse li a{
-    background-color: #000005;
-    color: #ffffff;
+    background-color: #80ADA0;
+    color: black !important;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -103,71 +91,41 @@ ul, ol{
 
 /*hover se usa para modificar algo cuando pasamos el mouse*/
 /*en este caso se le pone ese color para que cuando el mouse pase por la palabra que se el fondo sea gris */
+
 .navbar-collapse li a:hover {
-    background-color: #434343;
+    background-color: #80ADC1;
 }
 
 /*los li que estan directamente dentro de nav (submenu) van a tener esas propiedades: en este caso para tener forma*/
 /*para darle forma y que los li principales (generales) del nav se ordenen horizontalmente -horizontalmente para left porque elegimos left-*/
-.nav-padre__nav > li{
-    float: left;
-
-}
-
 /*los ul que están dentro de li que están dentro de nav (sub sub menu). ponemos display none para que los sub sub menu se pongan dentro de los submenu*/
 /*position absolute es para que el cuadrado del menu esté acorde al tamaño de la palabra de la que se despliega -pueden quedar empalmados los menu desplegables-*/
 /*en este punto desaparecen los menu desplegables y ahi se arma .nav li:hover > ul */
-.nav-padre__nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-} 
-
 /*los li que están dentro de nav pero que cuando pasamos el mouse están con clase hover y directos (>) de ul*/
 /*con esta indicación los submenu desaparecidos con .nav li ul van a volver a aparecer pero los sub submenus van a estar mal desplegados por eso se crea  .nav li ul li*/
-.nav-padre__nav li:hover > ul {
-    display: block;
-}
-
 /*los li que estén dentro de ul que estén dentro de li*/
 /*se cambia la posición relativa para que los sub sub menú se desplieguen bien*/
 /*al ser posición relativa se pueden modificar los sub sub menu en .nav li ul li ul*/
-/*nav-padre__.nav li ul li {
-    position: relative;
-}
-
 /*para modificar los .nav li ul li*/
-/*nav-padre__.nav li ul li ul {
-    right: -140px;
-    top: 0px;
-}* */
-
 /*al darle position absolute pierde sus medidas entonces se le da el width del 100% pero ésto solo sirve para cuando hay poco contenido en la página*/
-.nav-padre__login {
-    width: 100%;
-    text-align: right;
-    display: grid;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #000005;
-    justify-content: flex-end;
-}
 
 
 /*main*/
 main {
     width: 100%;
-    padding: 0% 35px;
+    padding: 100px 35px;
     display: grid;
     justify-content: center;
     justify-self: center;
 
 }
-@media screen and (min-width: 1025px) {
-    /*mobile first*/
+@media screen and (min-width: 992px) {
     main{
         width: 50%;
+        padding: 0% 35px;
     }
 }
+
 h1 {
     text-align: center;
     color: cornflowerblue;
@@ -186,7 +144,7 @@ h2 {
     height: 40px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .buscador {
         display: grid;
         grid-template-columns: auto 60px;
@@ -237,12 +195,10 @@ h2 {
 }
 
 .fa-instagram {
-
     color: black;
 }
 
 .fa-reddit {
-
     color: orangered;
 }
 
@@ -281,7 +237,7 @@ h2 {
     border: solid 5px #84a8f3;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .section-index__flex-padre{
         flex-direction: row;
     }
@@ -290,7 +246,7 @@ h2 {
 /*footer*/
 #main-footer {
     color: white;
-    background-color: #000005;
+    background-color: #33202A;
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
@@ -306,7 +262,7 @@ h2 {
 
 }
 
-
+/*
 .todos-buscador {
     display: grid;
     grid-template-columns: auto auto;
@@ -320,7 +276,7 @@ h2 {
     justify-self: center;
     height: 40px;
 
-}
+}*/
 
 
 /*NOSOTROS*/
@@ -335,7 +291,7 @@ h2 {
     padding: 50px 0 50px 0;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .iframes-nos {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -366,7 +322,7 @@ img {
     height: fit-content;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .grilla-ind {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -391,7 +347,7 @@ img {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .padre-cards {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -431,7 +387,7 @@ img {
     text-align: center;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .section-masinfo {
         padding: 30px;
     }
@@ -446,7 +402,7 @@ img {
     background-color: #3B5998;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .peligro {
         font-size: 15px;
         position: absolute;
