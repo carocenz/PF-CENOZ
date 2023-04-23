@@ -1,0 +1,83 @@
+/*MAS INFO*/
+#ambiente-masinfo {
+    margin-top: 50px;
+}
+
+.padre-cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30px;
+    gap: 60px;
+    justify-content: center;
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+        gap: 60px;
+        justify-content: center;
+    }
+}
+
+.padre-cards__orden1 {
+    order: 2;
+}
+
+.padre-cards__orden2 {
+    order: 1;
+}
+
+.padre-cards__card {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #434343;
+    border: 5px solid black;
+        h4, p, button {
+            margin-top: 15px;    
+        }
+        p {
+            text-align: center;
+            color: rgb(255, 252, 246);
+        }
+        button {
+            border: none;
+            padding: 8px 15px;
+            background-color: #3B5998;
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+}
+
+.section-masinfo {
+    padding: 30px;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+            padding: 30px;
+    }
+}
+
+
+.peligro {
+    font-size: 15px;
+    position: initial;
+    top: 20px;
+    left: 80%;
+    width: 100%;
+    background-color: #3B5998;
+    @media screen and (min-width: 1024px) {
+        font-size: 15px;
+        position: absolute;
+        top: 20px;
+        left: 80%;
+        width: 120px;
+        background-color: #3B5998;
+    }
+}
+
+a {
+    button {
+        p {
+            color: #000005;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/*general*/
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*body*/
+body{
+    background-color: rgb(255, 252, 246);
+    display: grid;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+    @media screen and (min-width: 1024px) {
+        padding: 100px 0 0 0;
+    }
+}
+
+/*main*/
+main {
+    width: 100%;
+    padding: 100px 35px;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+        padding: 0% 35px;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+h2 {
+    text-align: center;
+    color: #434343;
+}
+
+h4 {
+    color: #000005;
+    text-align: center;
+
+}
+
+/*buscador*/
+.buscador {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-self: center;
+    height: 40px;
+    margin: 20px 0;
+    @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: auto 60px;
+            justify-self: center;
+            height: 40px;
+    }
+}
+
+.buscador__input {
+    width: 100%
+}
+
+/*social icons*/
+.social-icons {
+    display: grid;
+    position: fixed;
+    top: 50%;
+    /*transform: para centrar los position absolute o position fixed*/
+    transform: translateY(-50%);
+    z-index: 1;
+    /*left px para separar los iconos del borde*/
+    left: 2px;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    color: rgb(53, 100, 255);
+}
+
+.fa-instagram {
+    color: black;
+}
+
+.fa-reddit {
+    color: orangered;
+}

@@ -1,0 +1,16 @@
+/*footer*/
+#main-footer {
+    color: white;
+    background-color: #33202A;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: fit-content;
+    align-self: end;
+    padding: 5px 10px;
+    a {
+        align-self: center;
+        justify-self: center;
+    }
+
+}

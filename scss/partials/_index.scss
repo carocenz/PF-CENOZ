@@ -1,0 +1,41 @@
+@import './generales';
+@import './header';
+@import './footer';
+
+/*section-index*/
+.section-index__fondo-celeste {
+    background-color:  #80ADC1;
+}
+
+#section-index__letra-verde {
+    color: #006400;
+
+}
+
+.section-index__letra-grande {
+    font-size: 30px;
+}
+
+#section-index__section-index {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (12, 1fr);
+}
+
+.section-index__flex-padre {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: fit-content;
+    border: solid 5px #84a8f3;
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+    }
+}
