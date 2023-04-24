@@ -51,29 +51,41 @@ h4 {
     justify-self: center;
     height: 40px;
     margin: 20px 0;
+    input [type="text"] {
+        border-radius: 15px;    
+    }
     @media screen and (min-width: 1024px) {
-            display: grid;
-            grid-template-columns: auto 60px;
-            justify-self: center;
-            height: 40px;
+        display: grid;
+        grid-template-columns: auto 60px;
+        justify-self: center;
+        height: 40px;
+        input  [type="text"] {
+            border-radius: 15px;    
+        }
     }
 }
 
 .buscador__input {
-    width: 100%
+    width: 100%;
+    border-radius: 15px;
 }
+
 
 /*social icons*/
 .social-icons {
     display: grid;
-    position: fixed;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 20%;
+    /*position: fixed;*/
     top: 50%;
     /*transform: para centrar los position absolute o position fixed*/
-    transform: translateY(-50%);
+    /*transform: translateY(-50%);*/
     z-index: 1;
-    /*left px para separar los iconos del borde*/
-    left: 2px;
+    /*left px para separar los iconos del borde
+    left: 2px;*/
+    justify-self: center;
 }
+
 
 .fa {
     font-size: 30px;

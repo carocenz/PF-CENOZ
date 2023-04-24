@@ -1,14 +1,100 @@
 #form {
+    border-radius: 12px;
+    padding: 30px;
     width: 100%;
     text-align: left;
-    background-color:#80ADA0;
+    background-color: #80ada0;
     margin-top: 30px;
     margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px 30px;
+    grid-template-areas:
+        "nombre"
+        "email"
+        "telefono"
+        "dni"
+        "mensaje"
+        "send-button";
+    div, textarea {
+        input {
+            border:none;
+            width: 100%;
+            border-radius: 6px;
+            padding: 10px;
+            font-weight: bold;
+            color: #4d4d4d;
+        }
+    }
 }
 
-form {
-    input, textarea{
+@media screen and (min-width: 1024px) {
+    #form {
+        border-radius: 12px;
+        padding: 30px;
         width: 100%;
-        border-radius: 15px;
+        text-align: left;
+        background-color: #80ada0;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 30px;
+        grid-template-areas:
+            "nombre email"
+            "telefono dni"
+            "mensaje mensaje"
+            "send-button send-button";
+        div, textarea {
+            input {
+                border:none;
+                width: 100%;
+                border-radius: 6px;
+                padding: 10px;
+                font-weight: bold;
+                color: #4d4d4d;
+            }
+        }
     }
+} 
+
+
+.mensaje {
+    grid-area: mensaje;
+}
+.nombre {
+    grid-area: nombre;
+}
+.email {
+    grid-area: email;
+}
+.telefono {
+    grid-area: telefono;
+}
+.dni {
+    grid-area: dni;
+}
+
+
+
+.form-box{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-row-gap:6px;
+    label {
+        padding:5px;    
+    }
+}
+
+.send-button {
+    width: fit-content;
+    justify-self: end;
+    margin: 15px 0 0 0;
+    padding:10px 20px;
+    border:none;
+    background-color: white;
+    font-weight: bold;
+    color:#333;
+    border-radius: 6px;
+    grid-area: send-button;
 }

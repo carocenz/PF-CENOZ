@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/logo.jpg">
+    <link rel="shortcut icon" href="../img/logoresto.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="Logo Ambiental" title="Este es el logo de la página" height="50" width="50"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../img/logoresto.jpg" alt="Logo Ambiental" title="Este es el logo de la página" height="50" width="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,36 +56,27 @@
 
     <section class="form">
         <form id="form">
-            <!--El for del label debe ser igual al id del input-->
-            <label for="nombre">Nombre y Apellido</label>
-            <br>
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
-            <br>
-            <br>
-            <label for="correo">E-mail</label>
-            <br>
-            <input type="email" id="correo" >
-            <br>
-            <br>
-            <label for="telefono">Telefono</label>
-            <br>
-            <input type="tel" id="telefono">
-            <br>
-            <br>
-            <label for="dni">DNI</label>
-            <br>
-            <input type="number" id="dni">
-            <br>
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <br>
-            <textarea id="mensaje" cols="30" rows="10"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Enviar formulario">
-            <br>
-            <input type="reset" value="Limpiar formulario">
-            <br>
+            <div class="nombre form-box">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
+            <div class="email form-box">
+                <label for="correo">E-mail</label>
+                <input type="email" id="correo" >
+            </div>
+            <div class="telefono form-box">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono">
+            </div>
+            <div class="dni form-box">
+                <label for="dni">DNI</label>
+                <input type="number" id="dni">
+            </div>
+            <div class="mensaje form-box">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <input class="send-button" type="submit" value="Enviar formulario">
         </form>
     </section>
 
