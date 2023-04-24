@@ -183,10 +183,11 @@ header a {
   background-color: #80ADC1;
 }
 
-.container-fluid {
-  width: 50%;
+@media screen and (min-width: 1024px) {
+  .container-fluid {
+    width: 50%;
+  }
 }
-
 /*footer*/
 #main-footer {
   color: white;
@@ -652,10 +653,11 @@ header a {
   background-color: #80ADC1;
 }
 
-.container-fluid {
-  width: 50%;
+@media screen and (min-width: 1024px) {
+  .container-fluid {
+    width: 50%;
+  }
 }
-
 /*footer*/
 #main-footer {
   color: white;
