@@ -5,7 +5,7 @@
 
 /*body*/
 body {
-  background-color: rgb(255, 252, 246);
+  background-color: #FEF9EF;
   display: grid;
   margin: 0%;
   padding: 0%;
@@ -20,7 +20,7 @@ body {
 /*main*/
 main {
   width: 100%;
-  padding: 100px 35px;
+  padding: 130px 35px;
   display: grid;
   justify-content: center;
   justify-self: center;
@@ -28,7 +28,7 @@ main {
 @media screen and (min-width: 1024px) {
   main {
     width: 50%;
-    padding: 0% 35px;
+    padding: 2% 35px;
   }
 }
 
@@ -79,15 +79,10 @@ h4 {
 .social-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 20%;
-  /*position: fixed;*/
   top: 50%;
-  /*transform: para centrar los position absolute o position fixed*/
-  /*transform: translateY(-50%);*/
   z-index: 1;
-  /*left px para separar los iconos del borde
-  left: 2px;*/
   justify-self: center;
+  grid-column-gap: 20px;
 }
 
 .fa {
@@ -115,7 +110,7 @@ h4 {
 }
 
 .fa-instagram {
-  color: black;
+  color: white;
 }
 
 .fa-reddit {
@@ -125,7 +120,7 @@ h4 {
 /*header*/
 header {
   width: 100%;
-  background-color: black;
+  background-color: #80ADA0;
   padding: 0%;
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -135,6 +130,7 @@ header {
   position: initial;
   top: 0;
   z-index: 1;
+  opacity: 0.9;
 }
 header a {
   justify-self: start;
@@ -142,7 +138,7 @@ header a {
 @media screen and (min-width: 1024px) {
   header {
     width: 70%;
-    background-color: #000005;
+    background-color: #80ADA0;
     padding: 0%;
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -162,16 +158,21 @@ header a {
 
 .navbar {
   background-color: #80ADA0;
+  padding: 0;
+  min-height: 90px;
 }
 @media screen and (min-width: 1024px) {
   .navbar {
     background-color: #80ADA0;
   }
 }
+.navbar .navbar-toggler {
+  color: white;
+}
 
 .navbar-collapse li a {
   background-color: #80ADA0;
-  color: black !important;
+  color: white !important;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
@@ -183,11 +184,24 @@ header a {
   background-color: #80ADC1;
 }
 
+.container-fluid {
+  height: 100%;
+}
 @media screen and (min-width: 1024px) {
   .container-fluid {
     width: 50%;
   }
 }
+
+.navbar-brand {
+  height: 100%;
+  width: 100px;
+}
+.navbar-brand img {
+  width: 90%;
+  height: 90%;
+}
+
 /*footer*/
 #main-footer {
   color: white;
@@ -197,7 +211,8 @@ header a {
   text-align: center;
   height: fit-content;
   align-self: end;
-  padding: 5px 10px;
+  padding: 40px 0 20px 0;
+  grid-row-gap: 20px;
 }
 #main-footer a {
   align-self: center;
@@ -475,7 +490,7 @@ a button p {
 
 /*body*/
 body {
-  background-color: rgb(255, 252, 246);
+  background-color: #FEF9EF;
   display: grid;
   margin: 0%;
   padding: 0%;
@@ -490,7 +505,7 @@ body {
 /*main*/
 main {
   width: 100%;
-  padding: 100px 35px;
+  padding: 130px 35px;
   display: grid;
   justify-content: center;
   justify-self: center;
@@ -498,7 +513,7 @@ main {
 @media screen and (min-width: 1024px) {
   main {
     width: 50%;
-    padding: 0% 35px;
+    padding: 2% 35px;
   }
 }
 
@@ -549,15 +564,10 @@ h4 {
 .social-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 20%;
-  /*position: fixed;*/
   top: 50%;
-  /*transform: para centrar los position absolute o position fixed*/
-  /*transform: translateY(-50%);*/
   z-index: 1;
-  /*left px para separar los iconos del borde
-  left: 2px;*/
   justify-self: center;
+  grid-column-gap: 20px;
 }
 
 .fa {
@@ -585,7 +595,7 @@ h4 {
 }
 
 .fa-instagram {
-  color: black;
+  color: white;
 }
 
 .fa-reddit {
@@ -595,7 +605,7 @@ h4 {
 /*header*/
 header {
   width: 100%;
-  background-color: black;
+  background-color: #80ADA0;
   padding: 0%;
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -605,6 +615,7 @@ header {
   position: initial;
   top: 0;
   z-index: 1;
+  opacity: 0.9;
 }
 header a {
   justify-self: start;
@@ -612,7 +623,7 @@ header a {
 @media screen and (min-width: 1024px) {
   header {
     width: 70%;
-    background-color: #000005;
+    background-color: #80ADA0;
     padding: 0%;
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -632,16 +643,21 @@ header a {
 
 .navbar {
   background-color: #80ADA0;
+  padding: 0;
+  min-height: 90px;
 }
 @media screen and (min-width: 1024px) {
   .navbar {
     background-color: #80ADA0;
   }
 }
+.navbar .navbar-toggler {
+  color: white;
+}
 
 .navbar-collapse li a {
   background-color: #80ADA0;
-  color: black !important;
+  color: white !important;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
@@ -653,11 +669,24 @@ header a {
   background-color: #80ADC1;
 }
 
+.container-fluid {
+  height: 100%;
+}
 @media screen and (min-width: 1024px) {
   .container-fluid {
     width: 50%;
   }
 }
+
+.navbar-brand {
+  height: 100%;
+  width: 100px;
+}
+.navbar-brand img {
+  width: 90%;
+  height: 90%;
+}
+
 /*footer*/
 #main-footer {
   color: white;
@@ -667,7 +696,8 @@ header a {
   text-align: center;
   height: fit-content;
   align-self: end;
-  padding: 5px 10px;
+  padding: 40px 0 20px 0;
+  grid-row-gap: 20px;
 }
 #main-footer a {
   align-self: center;

@@ -5,7 +5,7 @@
 
 /*body*/
 body{
-    background-color: rgb(255, 252, 246);
+    background-color: #FEF9EF;
     display: grid;
     margin: 0%;
     padding: 0%;
@@ -18,13 +18,13 @@ body{
 /*main*/
 main {
     width: 100%;
-    padding: 100px 35px;
+    padding: 130px 35px;
     display: grid;
     justify-content: center;
     justify-self: center;
     @media screen and (min-width: 1024px) {
         width: 50%;
-        padding: 0% 35px;
+        padding: 2% 35px;
     }
 }
 
@@ -75,15 +75,10 @@ h4 {
 .social-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 20%;
-    /*position: fixed;*/
     top: 50%;
-    /*transform: para centrar los position absolute o position fixed*/
-    /*transform: translateY(-50%);*/
     z-index: 1;
-    /*left px para separar los iconos del borde
-    left: 2px;*/
     justify-self: center;
+    grid-column-gap: 20px;
 }
 
 
@@ -112,7 +107,7 @@ h4 {
 }
 
 .fa-instagram {
-    color: black;
+    color: white;
 }
 
 .fa-reddit {
