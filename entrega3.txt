@@ -1,0 +1,23 @@
+PRACTICAS SEO
+-Titulo de header de cada html: TITULO | nombre del html
+-Buen uso de H1, H2, H3 y strong, em, etc.
+-Organizar contenido separandolo bien en secciones,
+fácil acceso en buscadores, información precisa.
+-Promocionar redes sociales y otros sitios web
+relacionados.
+-Crear mapa del sitio: https://www.xml-sitemaps.com/
+-Completar los alt de las imágenes.
+-Imágenes comprimidas: https://squoosh.app/ - formato WebP
+
+
+
+
+ANIMACIONES
+-Imágenes de concientización con scale y hover
+
+
+
+
+SIN LOREM
+SEO (description,
+keywords, alt, H1), contenido ya real en texto e imagen.

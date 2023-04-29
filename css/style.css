@@ -228,10 +228,6 @@ header a {
   color: #006400;
 }
 
-.section-index__letra-grande {
-  font-size: 30px;
-}
-
 #section-index__section-index {
   display: grid;
   padding: 15px;
@@ -292,23 +288,40 @@ img {
 .grilla-ind img {
   max-width: 100%;
   height: auto;
-}
-@media screen and (min-width: 768px) {
-  .grilla-ind img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .grilla-ind img {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
 }
 
 .container {
   width: 80vw;
   padding-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-container img:last-child {
+  opacity: 0;
+}
+
+.image-container:hover img:first-child {
+  opacity: 0;
+}
+
+.image-container:hover img:last-child {
+  opacity: 1;
 }
 
 /*MAS INFO*/
