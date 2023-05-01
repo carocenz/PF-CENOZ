@@ -29,8 +29,10 @@
 .padre-cards__card {
     position: relative;
     margin-bottom: 15px;
-    background-color: #434343;
+    background-color: #80ADA0;
     border: 5px solid black;
+    border-radius: 15%;
+    justify-content: center;
         h4, p, button {
             margin-top: 15px;    
         }
@@ -41,10 +43,14 @@
         button {
             border: none;
             padding: 8px 15px;
-            background-color: #3B5998;
+            background-color: #434343;
             color: white;
             cursor: pointer;
-            border-radius: 20px;
+            border-radius: 15px 50px;
+            margin-bottom: 10px;
+        }
+        img {
+            padding-top: 10%;
         }
 }
 
