@@ -235,25 +235,6 @@ header a {
   grid-template-rows: repeat 12, 1fr;
 }
 
-.section-index__flex-padre {
-  display: flex;
-  flex-flow: row nowrap;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 10px;
-  margin: 5px;
-  height: fit-content;
-  border: solid 5px #84a8f3;
-}
-@media screen and (min-width: 992px) {
-  .section-index__flex-padre {
-    flex-direction: row;
-  }
-}
-
 /*NOSOTROS*/
 .iframes-nos {
   display: grid;
@@ -324,22 +305,29 @@ img {
   opacity: 1;
 }
 
+.barrita {
+  height: 10px;
+  width: 50%;
+  margin-bottom: 5px;
+  transition: width 2s;
+}
+
+.barrita_color {
+  background-color: black !important;
+}
+
 /*MAS INFO*/
 #ambiente-masinfo {
   margin-top: 50px;
 }
 
 .padre-cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   margin-top: 30px;
   gap: 60px;
   justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .padre-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
     gap: 60px;
     justify-content: center;
@@ -360,7 +348,6 @@ img {
   background-color: #80ADA0;
   border: 5px solid black;
   border-radius: 15%;
-  justify-content: center;
 }
 .padre-cards__card h4, .padre-cards__card p, .padre-cards__card button {
   margin-top: 15px;
