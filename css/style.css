@@ -285,12 +285,7 @@ img {
   width: 100%;
   height: 300px;
   overflow: hidden;
-}
-
-.image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
 }
 
 .image-container img:last-child {
@@ -303,17 +298,6 @@ img {
 
 .image-container:hover img:last-child {
   opacity: 1;
-}
-
-.barrita {
-  height: 10px;
-  width: 50%;
-  margin-bottom: 5px;
-  transition: width 2s;
-}
-
-.barrita_color {
-  background-color: black !important;
 }
 
 /*MAS INFO*/

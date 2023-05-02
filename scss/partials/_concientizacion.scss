@@ -7,7 +7,7 @@
     left: 0;
     transition: opacity 0.5s ease;
   }
-  
+
   .container {
     width: 80vw;
     padding-bottom: 20px;
@@ -18,14 +18,8 @@
     width: 100%;
     height: 300px;
     overflow: hidden;
+    display: flex;
   }
-  
-  .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
 
   .image-container img:last-child {
     opacity: 0;
@@ -38,14 +32,3 @@
   .image-container:hover img:last-child {
     opacity: 1;
   }
-
-.barrita {
-  height: 10px;
-  width: 50%;
-  margin-bottom: 5px;
-  transition: width 2s;
-}
-
-.barrita_color {
-  background-color: black!important;
-}
