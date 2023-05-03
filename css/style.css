@@ -270,7 +270,8 @@ img {
   max-width: 100%;
   height: auto;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   transition: opacity 0.5s ease;
 }
@@ -384,6 +385,15 @@ img {
 
 a button p {
   color: #000005;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+@media screen and (min-width: 1025px) {
+  .carousel-item img {
+    height: 80vh;
+  }
 }
 
 #form {
