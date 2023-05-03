@@ -122,10 +122,6 @@ header {
   width: 100%;
   background-color: #80ADA0;
   padding: 0%;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  justify-self: center;
-  text-align: center;
   height: fit-content;
   position: initial;
   top: 0;
@@ -140,10 +136,6 @@ header a {
     width: 70%;
     background-color: #80ADA0;
     padding: 0%;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    justify-self: center;
-    text-align: center;
     height: fit-content;
     position: fixed;
     top: 0;
@@ -312,14 +304,26 @@ img {
 }
 
 .wrapper-card {
-  width: 450px;
-  height: 500px;
+  width: 100%;
+  height: fit-content;
   background-color: #80ADA0;
   border-radius: 10px;
   display: grid;
   grid-template-rows: 250px;
   grid-row-gap: 1rem;
   position: relative;
+}
+@media screen and (min-width: 1025px) {
+  .wrapper-card {
+    width: 450px;
+    height: 500px;
+    background-color: #80ADA0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-row-gap: 1rem;
+    position: relative;
+  }
 }
 .wrapper-card span {
   position: absolute;
@@ -578,10 +582,6 @@ header {
   width: 100%;
   background-color: #80ADA0;
   padding: 0%;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  justify-self: center;
-  text-align: center;
   height: fit-content;
   position: initial;
   top: 0;
@@ -596,10 +596,6 @@ header a {
     width: 70%;
     background-color: #80ADA0;
     padding: 0%;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    justify-self: center;
-    text-align: center;
     height: fit-content;
     position: fixed;
     top: 0;

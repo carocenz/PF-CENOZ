@@ -3,10 +3,6 @@ header {
     width: 100%;
     background-color: #80ADA0;
     padding: 0%;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    justify-self: center;
-    text-align: center;
     height: fit-content;
     position: initial;
     top: 0;
@@ -19,10 +15,6 @@ header {
             width: 70%;
             background-color: #80ADA0;
             padding: 0%;
-            display: grid;
-            grid-template-columns: 50px 1fr;
-            justify-self: center;
-            text-align: center;
             height: fit-content;
             position: fixed;
             top: 0;
