@@ -50,20 +50,28 @@ h4 {
 /*buscador*/
 .buscador {
   display: grid;
-  grid-template-columns: 80% 20%;
   justify-self: center;
   height: 40px;
   margin: 20px 0;
+  position: relative;
 }
-.buscador input [type=text] {
+.buscador input[type=text] {
   border-radius: 15px;
+}
+.buscador input[type=button] {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 @media screen and (min-width: 1024px) {
   .buscador {
     display: grid;
-    grid-template-columns: auto 60px;
     justify-self: center;
     height: 40px;
+    position: relative;
   }
   .buscador input [type=text] {
     border-radius: 15px;
@@ -214,6 +222,7 @@ header a {
 /*section-index*/
 .section-index__fondo-celeste {
   background-color: #80ADC1;
+  border-radius: 10px;
 }
 
 #section-index__letra-verde {
@@ -510,20 +519,28 @@ h4 {
 /*buscador*/
 .buscador {
   display: grid;
-  grid-template-columns: 80% 20%;
   justify-self: center;
   height: 40px;
   margin: 20px 0;
+  position: relative;
 }
-.buscador input [type=text] {
+.buscador input[type=text] {
   border-radius: 15px;
+}
+.buscador input[type=button] {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 @media screen and (min-width: 1024px) {
   .buscador {
     display: grid;
-    grid-template-columns: auto 60px;
     justify-self: center;
     height: 40px;
+    position: relative;
   }
   .buscador input [type=text] {
     border-radius: 15px;
