@@ -5,7 +5,7 @@
 
 /*body*/
 body {
-  background-color: #FEF9EF;
+  background-image: linear-gradient(to right top, #33202a, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, #009186);
   display: grid;
   margin: 0%;
   padding: 0%;
@@ -42,8 +42,8 @@ h2 {
   color: #434343;
 }
 
-h4 {
-  color: #06a800;
+h3, h4 {
+  color: #33202A;
   text-align: center;
 }
 
@@ -128,7 +128,7 @@ h4 {
 /*header*/
 header {
   width: 100%;
-  background-color: #80ADA0;
+  background-color: #009186;
   padding: 0%;
   height: fit-content;
   position: initial;
@@ -142,7 +142,7 @@ header a {
 @media screen and (min-width: 1024px) {
   header {
     width: 70%;
-    background-color: #80ADA0;
+    background-color: #009186;
     padding: 0%;
     height: fit-content;
     position: fixed;
@@ -157,13 +157,13 @@ header a {
 }
 
 .navbar {
-  background-color: #80ADA0;
+  background-color: #009186;
   padding: 0;
   min-height: 90px;
 }
 @media screen and (min-width: 1024px) {
   .navbar {
-    background-color: #80ADA0;
+    background-color: #009186;
   }
 }
 .navbar .navbar-toggler {
@@ -171,7 +171,7 @@ header a {
 }
 
 .navbar-collapse li a {
-  background-color: #80ADA0;
+  background-color: #009186;
   color: white !important;
   text-decoration: none;
   padding: 10px 15px;
@@ -223,10 +223,6 @@ header a {
 .section-index__fondo-celeste {
   background-color: #80ADC1;
   border-radius: 10px;
-}
-
-#section-index__letra-verde {
-  color: #006400;
 }
 
 #section-index__section-index {
@@ -315,7 +311,7 @@ img {
 .wrapper-card {
   width: 100%;
   height: fit-content;
-  background-color: #80ADA0;
+  background-color: #009186;
   border-radius: 10px;
   display: grid;
   grid-template-rows: 250px;
@@ -326,7 +322,7 @@ img {
   .wrapper-card {
     width: 450px;
     height: 500px;
-    background-color: #80ADA0;
+    background-color: #009186;
     border-radius: 10px;
     display: grid;
     grid-template-rows: 250px;
@@ -385,7 +381,7 @@ a button p {
   padding: 30px;
   width: 100%;
   text-align: left;
-  background-color: #80ada0;
+  background-color: #009186;
   margin-top: 30px;
   margin-bottom: 15px;
   display: grid;
@@ -408,7 +404,7 @@ a button p {
     padding: 30px;
     width: 100%;
     text-align: left;
-    background-color: #80ada0;
+    background-color: #009186;
     margin-top: 30px;
     margin-bottom: 15px;
     display: grid;
@@ -474,7 +470,7 @@ a button p {
 
 /*body*/
 body {
-  background-color: #FEF9EF;
+  background-image: linear-gradient(to right top, #33202a, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, #009186);
   display: grid;
   margin: 0%;
   padding: 0%;
@@ -511,8 +507,8 @@ h2 {
   color: #434343;
 }
 
-h4 {
-  color: #06a800;
+h3, h4 {
+  color: #33202A;
   text-align: center;
 }
 
@@ -597,7 +593,7 @@ h4 {
 /*header*/
 header {
   width: 100%;
-  background-color: #80ADA0;
+  background-color: #009186;
   padding: 0%;
   height: fit-content;
   position: initial;
@@ -611,7 +607,7 @@ header a {
 @media screen and (min-width: 1024px) {
   header {
     width: 70%;
-    background-color: #80ADA0;
+    background-color: #009186;
     padding: 0%;
     height: fit-content;
     position: fixed;
@@ -626,13 +622,13 @@ header a {
 }
 
 .navbar {
-  background-color: #80ADA0;
+  background-color: #009186;
   padding: 0;
   min-height: 90px;
 }
 @media screen and (min-width: 1024px) {
   .navbar {
-    background-color: #80ADA0;
+    background-color: #009186;
   }
 }
 .navbar .navbar-toggler {
@@ -640,7 +636,7 @@ header a {
 }
 
 .navbar-collapse li a {
-  background-color: #80ADA0;
+  background-color: #009186;
   color: white !important;
   text-decoration: none;
   padding: 10px 15px;

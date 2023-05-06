@@ -69,17 +69,17 @@ header a {
 /*el display en block ordena los elementos en bloque para que no se pisen entre si*/
 
 .navbar {
-    background-color: #80ADA0;
+    background-color: #009186;
 }
 
 @media screen and (min-width: 992px) {
     .navbar {
-        background-color: #80ADA0;
+        background-color: #009186;
     }
 }
 
 .navbar-collapse li a{
-    background-color: #80ADA0;
+    background-color: #009186;
     color: black !important;
     text-decoration: none;
     padding: 10px 15px;
@@ -451,7 +451,7 @@ a button p {
 #form {
     width: 100%;
     text-align: left;
-    background-color:#80ADA0;
+    background-color:#009186;
     margin-top: 30px;
     margin-bottom: 15px;
 }

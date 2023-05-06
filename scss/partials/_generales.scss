@@ -5,7 +5,7 @@
 
 /*body*/
 body{
-    background-color: #FEF9EF;
+    background-image: linear-gradient(to right top, #33202a, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, #009186);
     display: grid;
     margin: 0%;
     padding: 0%;
@@ -38,8 +38,8 @@ h2 {
     color: #434343;
 }
 
-h4 {
-    color: #06a800;
+h3, h4 {
+    color: #33202A;
     text-align: center;
 
 }

@@ -1,7 +1,7 @@
 /*header*/
 header {
     width: 100%;
-    background-color: #80ADA0;
+    background-color: #009186;
     padding: 0%;
     height: fit-content;
     position: initial;
@@ -13,7 +13,7 @@ header {
     }
     @media screen and (min-width: 1024px) {
             width: 70%;
-            background-color: #80ADA0;
+            background-color: #009186;
             padding: 0%;
             height: fit-content;
             position: fixed;
@@ -30,11 +30,11 @@ header {
 
 
 .navbar {
-    background-color: #80ADA0;
+    background-color: #009186;
     padding: 0;
     min-height: 90px;
     @media screen and (min-width: 1024px) {
-            background-color: #80ADA0;
+            background-color: #009186;
     }
     .navbar-toggler {
         color: white;
@@ -44,7 +44,7 @@ header {
 .navbar-collapse {
     li {
         a{
-        background-color: #80ADA0;
+        background-color: #009186;
         color: white !important;
         text-decoration: none;
         padding: 10px 15px;

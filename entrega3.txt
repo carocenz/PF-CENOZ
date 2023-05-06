@@ -1,15 +1,4 @@
-PRACTICAS SEO
--Organizar contenido separandolo bien en secciones,
-fácil acceso en buscadores, información precisa.
-
-Preguntar
--Crear mapa del sitio: https://www.xml-sitemaps.com/
-
-
 FALTA:
-Arrelar carousel.
-Ver imágenes de carousel y concientización.
 Agregar texto en las industrias y en Nosotros.
-Arreglar más lindo el index.
-Arreglar más linda la paleta de colores.
-
+Agregar mapa de links en el footer.
+Agregar Login.
