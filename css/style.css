@@ -125,6 +125,54 @@ h3, h4 {
   color: orangered;
 }
 
+/*INDUSTRIAS*/
+.cards__industria {
+  background-color: #33202A;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  width: 250px;
+  max-width: 100%;
+  padding: 16px;
+  text-align: center;
+}
+.cards__industria h2 {
+  color: #009186;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -16px;
+  gap: 15px;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: -16px;
+    padding-bottom: 5%;
+  }
+}
+
+.containers__industria {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+.containers__industria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.containers__industria p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /*header*/
 header {
   width: 100%;
@@ -219,17 +267,71 @@ header a {
   justify-self: center;
 }
 
-/*section-index*/
-.section-index__fondo-celeste {
-  background-color: #80ADC1;
-  border-radius: 10px;
+section {
+  display: block;
 }
 
-#section-index__section-index {
-  display: grid;
-  padding: 15px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat 12, 1fr;
+.indexpadre__cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .indexpadre__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
+    place-items: center;
+    margin: auto;
+  }
+}
+
+.card {
+  background-color: #33202A;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  width: 250px;
+  max-width: 100%;
+  padding: 16px;
+  text-align: center;
+}
+.card h4 {
+  color: #009186;
+  padding-top: 5px;
+}
+.card button {
+  border: none;
+  padding: 8px 15px;
+  background-color: #009186;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.card button p {
+  margin-top: 10px;
+}
+.card img {
+  height: 0%;
+}
+
+.image-container img {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  border-radius: 150px;
+}
+
+.mas {
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 78%;
+  width: 115px;
+  background-color: #009186;
 }
 
 /*NOSOTROS*/
@@ -262,6 +364,13 @@ img {
   max-width: 100%;
 }
 
+.offline {
+  color: #33202A;
+}
+.offline :hover {
+  color: #009186;
+}
+
 /*CONCIENTIZACION*/
 .grilla-ind img {
   max-width: 100%;
@@ -285,15 +394,12 @@ img {
   overflow: hidden;
   display: flex;
 }
-
 .image-container img:last-child {
   opacity: 0;
 }
-
 .image-container:hover img:first-child {
   opacity: 0;
 }
-
 .image-container:hover img:last-child {
   opacity: 1;
 }
@@ -588,6 +694,54 @@ h3, h4 {
 
 .fa-reddit {
   color: orangered;
+}
+
+/*INDUSTRIAS*/
+.cards__industria {
+  background-color: #33202A;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  width: 250px;
+  max-width: 100%;
+  padding: 16px;
+  text-align: center;
+}
+.cards__industria h2 {
+  color: #009186;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -16px;
+  gap: 15px;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: -16px;
+    padding-bottom: 5%;
+  }
+}
+
+.containers__industria {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+.containers__industria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.containers__industria p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /*header*/

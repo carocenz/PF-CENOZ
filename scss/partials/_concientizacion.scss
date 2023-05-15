@@ -2,7 +2,7 @@
 .grilla-ind img {
     max-width: 100%;
     height: auto;
-    position:absolute;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -20,16 +20,16 @@
     height: 300px;
     overflow: hidden;
     display: flex;
+    img:last-child {
+      opacity: 0;
+    }
+    &:hover img:first-child {
+      opacity: 0;
+     }
+    &:hover img:last-child {
+      opacity: 1;
+    }
   }
 
-  .image-container img:last-child {
-    opacity: 0;
-  }
   
-  .image-container:hover img:first-child {
-    opacity: 0;
-  }
   
-  .image-container:hover img:last-child {
-    opacity: 1;
-  }
