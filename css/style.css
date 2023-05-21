@@ -27,7 +27,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
-    width: 50%;
+    width: 75%;
     padding: 2% 35px;
   }
 }
@@ -131,7 +131,7 @@ h4 {
   background-color: #33202A;
   color: white;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-  width: 250px;
+  width: fit-content;
   max-width: 100%;
   padding: 16px;
   text-align: center;
@@ -146,8 +146,7 @@ h4 {
 }
 
 .cards__petroleo {
-  width: 800px;
-  height: 500px;
+  height: fit-content;
 }
 
 .card__container {
@@ -155,7 +154,8 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -16px;
+  justify-items: center;
+  margin: 20px;
   gap: 15px;
   align-items: center;
 }
@@ -163,7 +163,6 @@ h4 {
   .card__container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    margin: -16px;
     padding-bottom: 5%;
   }
 }
@@ -194,7 +193,7 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -16px;
+  margin: 20px;
   gap: 15px;
   align-items: center;
 }
@@ -202,13 +201,16 @@ h4 {
   .cards__container__petroleo {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    margin: -16px;
     padding-bottom: 5%;
   }
 }
 
 ul li {
   list-style: none;
+}
+
+.h2__ind {
+  padding: 20px 0 70px 0px;
 }
 
 /*header*/
@@ -334,6 +336,25 @@ header a {
   grid-template-columns: 1fr;
   text-align: center;
   align-content: center;
+  color: white;
+}
+@media screen and (min-width: 1025px) {
+  .footer3 {
+    display: none;
+  }
+}
+
+.footer4 {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .footer4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-content: center;
+    color: white;
+  }
 }
 
 section {
@@ -695,7 +716,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
-    width: 50%;
+    width: 75%;
     padding: 2% 35px;
   }
 }
@@ -799,7 +820,7 @@ h4 {
   background-color: #33202A;
   color: white;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-  width: 250px;
+  width: fit-content;
   max-width: 100%;
   padding: 16px;
   text-align: center;
@@ -814,8 +835,7 @@ h4 {
 }
 
 .cards__petroleo {
-  width: 800px;
-  height: 500px;
+  height: fit-content;
 }
 
 .card__container {
@@ -823,7 +843,8 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -16px;
+  justify-items: center;
+  margin: 20px;
   gap: 15px;
   align-items: center;
 }
@@ -831,7 +852,6 @@ h4 {
   .card__container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    margin: -16px;
     padding-bottom: 5%;
   }
 }
@@ -862,7 +882,7 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -16px;
+  margin: 20px;
   gap: 15px;
   align-items: center;
 }
@@ -870,13 +890,16 @@ h4 {
   .cards__container__petroleo {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    margin: -16px;
     padding-bottom: 5%;
   }
 }
 
 ul li {
   list-style: none;
+}
+
+.h2__ind {
+  padding: 20px 0 70px 0px;
 }
 
 /*header*/
@@ -1002,6 +1025,25 @@ header a {
   grid-template-columns: 1fr;
   text-align: center;
   align-content: center;
+  color: white;
+}
+@media screen and (min-width: 1025px) {
+  .footer3 {
+    display: none;
+  }
+}
+
+.footer4 {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .footer4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-content: center;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
