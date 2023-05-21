@@ -1,15 +1,16 @@
 /*general*/
-*{
+* {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*body*/
-body{
+body {
     background-image: linear-gradient(to right top, #33202a, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, #009186);
     display: grid;
     margin: 0%;
     padding: 0%;
     min-height: 100vh;
+
     @media screen and (min-width: 1024px) {
         padding: 100px 0 0 0;
     }
@@ -22,6 +23,7 @@ main {
     display: grid;
     justify-content: center;
     justify-self: center;
+
     @media screen and (min-width: 1024px) {
         width: 50%;
         padding: 2% 35px;
@@ -38,7 +40,8 @@ h2 {
     color: #434343;
 }
 
-h3, h4 {
+h3,
+h4 {
     color: #33202A;
     text-align: center;
 
@@ -51,9 +54,11 @@ h3, h4 {
     height: 40px;
     margin: 20px 0;
     position: relative;
+
     input[type="text"] {
-        border-radius: 15px;    
+        border-radius: 15px;
     }
+
     input[type="button"] {
         position: absolute;
         right: 0;
@@ -62,13 +67,15 @@ h3, h4 {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
+
     @media screen and (min-width: 1024px) {
         display: grid;
         justify-self: center;
         height: 40px;
         position: relative;
-        input  [type="text"] {
-            border-radius: 15px;    
+
+        input [type="text"] {
+            border-radius: 15px;
         }
     }
 }
@@ -100,6 +107,7 @@ h3, h4 {
     display: grid !important;
     justify-content: center;
     align-items: center;
+
     &:hover {
         opacity: 0.8;
     }
@@ -133,19 +141,31 @@ h3, h4 {
     padding: 16px;
     text-align: center;
     border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
     h2 {
         color: #009186;
     }
+}
+
+.cards__petroleo {
+    width: 800px;
+    height: 500px;
 }
 
 .card__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     margin: -16px;
     gap: 15px;
     align-items: center;
+
     @media screen and (min-width: 1025px) {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
@@ -160,17 +180,19 @@ h3, h4 {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     margin: 20px;
+
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
     }
+
     p {
-    font-size: 16px;
-    line-height: 1.5;
-    }   
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
-  
+
 .image-container {
     img {
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
@@ -178,3 +200,25 @@ h3, h4 {
     }
 }
 
+.cards__container__petroleo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -16px;
+    gap: 15px;
+    align-items: center;
+
+    @media screen and (min-width: 1025px) {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin: -16px;
+        padding-bottom: 5%;
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
