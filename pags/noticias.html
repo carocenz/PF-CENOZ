@@ -14,10 +14,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="description" content="¿Querés formar parte? ¡Contactate! ¿Querés dejarnos un mensaje? ¡Escribinos!">
+    <meta name="description" content="¡No te pierdas las últimas noticias sobre el medio ambiente!">
     <meta name="keywords"
-        content="medio ambiente, información ambiental, ecosistemas, industrias, gestion ambiental, veganismo, movimiento ambiental, derecho, derecho animal, futuro vegano, noticias medio ambiente, noticias ambiente, noticias ecologicas, noticias ecologia, noticias argentina, noticias ambientales, industria de la carne, industria de la moda, industria pesquera, industria ganadera, industria petrolera, industria agricola">
-    <title>Gestion Ambiental | Contacto</title>
+        content="medio ambiente, información ambiental, ecosistemas, industrias, gestion ambiental, veganismo, movimiento ambiental, derecho, derecho animal, futuro vegano, noticias medio ambiente, noticias ambiente, noticias ecologicas, noticias ecologia, noticias argentina, noticias ambientales">
+    <title>Gestion Ambiental | Noticias</title>
 </head>
 
 <body id="arriba">
@@ -69,32 +69,96 @@
             <input type="button" value="Go">
         </section>
 
-        <!--FORMULARIO DE CONTACTO-->
+        <!--CAROUSEL DE NOTICIAS-->
 
-        <section class="form">
-            <form id="form">
-                <div class="nombre form-box">
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+        <section id="ambiente-noticias">
+            <div id="carouselExampleRide" class="carousel slide padre-cards row" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="wrapper-card">
+                            <span> 20/03 </span>
+                            <img src="../img/MAR.webp" class="d-block w-100 card-image"
+                                alt="Imágen del barco hundido de Sri Lanka que contaminó sus costas.">
+                            <div class="info-wrapper">
+                                <h4>Pesca ilegal en el mar Argentino.</h4>
+                                <p>Sobre qué es la nota.</p>
+                                <a href="https://www.clarin.com/sociedad/aire-ve-ciudad-flotante-pesca-ilegal-mar-argentino_0_rsIFb9dfJz.html"
+                                    target="_blank">
+                                    <button>
+                                        <p>¡Lee la noticia!</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="wrapper-card">
+                            <span> 25/04 </span>
+                            <img src="../img/SL.webp" class="d-block w-100 card-image"
+                                alt="Imágen del barco hundido de Sri Lanka que contaminó sus costas.">
+                            <div class="info-wrapper">
+                                <h4>Desastre Ambiental en Sri Lanka.</h4>
+                                <p>Sobre qué es la nota.</p>
+                                <a href="https://www.infobae.com/america/agencias/2023/04/25/sri-lanka-reclama-6400-millones-dolares-por-el-desastre-ambiental-de-un-barco-hundido/"" target="
+                                    _blank">
+                                    <button>
+                                        <p>¡Lee la noticia!</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="wrapper-card">
+                            <span> 23/04 </span>
+                            <img src="../img/HUMO.webp" class="d-block w-100 card-image"
+                                alt="Imágen del barco hundido de Sri Lanka que contaminó sus costas.">
+                            <div class="info-wrapper">
+                                <h4>Humo en CABA.</h4>
+                                <p>Sobre qué es la nota.</p>
+                                <a href="https://urgente24.com/actualidad/caba-humo-un-desastre-ambiental-que-va-aumento-n554102"
+                                    target="_blank">
+                                    <button>
+                                        <p>¡Lee la noticia!</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="wrapper-card">
+                            <span> 02/05 </span>
+                            <img src="../img/GH.webp" class="d-block w-100 card-image"
+                                alt="Imágen sobre el Green Hushing.">
+                            <div class="info-wrapper">
+                                <h4>¿Qué es el Green hushing?</h4>
+                                <p>Sobre qué es la nota.</p>
+
+                                <a href="https://www.telam.com.ar/notas/202305/627225-cuando-las-empresas-se-llaman-a-silencio-frente-a-la-crisis-climatica-que-es-el-greenhushing.html"
+                                    target="_blank">
+                                    <button>
+                                        <p>¡Lee la noticia!</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="email form-box">
-                    <label for="correo">E-mail</label>
-                    <input type="email" id="correo">
-                </div>
-                <div class="telefono form-box">
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono">
-                </div>
-                <div class="dni form-box">
-                    <label for="dni">DNI</label>
-                    <input type="number" id="dni">
-                </div>
-                <div class="mensaje form-box">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <input class="send-button" type="submit" value="Enviar formulario">
-            </form>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
 
@@ -167,6 +231,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

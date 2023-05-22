@@ -344,7 +344,7 @@ img {
 }
 
 /*MAS INFO*/
-#ambiente-masinfo {
+#ambiente-noticias {
     margin-top: 50px;
 }
 
@@ -392,13 +392,13 @@ img {
     border-radius: 20px;
 }
 
-.section-masinfo {
+.section-noticias {
     padding: 30px;
     text-align: center;
 }
 
 @media screen and (min-width: 992px) {
-    .section-masinfo {
+    .section-noticias {
         padding: 30px;
     }
 }
