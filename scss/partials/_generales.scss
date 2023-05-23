@@ -52,6 +52,11 @@ p {
     color: $color-terciario;
 }
 
+img {
+    max-width: 100%;
+}
+
+
 
 /*BUSCADOR*/
 .buscador {
@@ -288,6 +293,7 @@ ul {
 
     @media screen and (min-width: $tabletYdesktop) {
         @include footer-mix;
+        gap: 10%;
     }
 
 }
