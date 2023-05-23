@@ -1,4 +1,4 @@
-/*MAS INFO*/
+/*NOTICIAS*/
 #ambiente-noticias {
     margin-top: 50px;
 }
@@ -11,17 +11,17 @@
 .wrapper-card {
     width: 100%;
     height: fit-content;
-    background-color: #009186;
+    background-color: $color-primario;
     border-radius: 10px;
     display: grid;
     grid-template-rows: 250px;
     grid-row-gap: 1rem;
     position: relative;
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $tabletYdesktop) {
         width: 450px;
         height: 500px;
-        background-color: #009186;
+        background-color: $color-primario;
         border-radius: 10px;
         display: grid;
         grid-template-rows: 250px;
@@ -34,7 +34,8 @@
         top: 8px;
         padding: 5px 10px;
         right: -10px;
-        background: gainsboro;
+        color: $color-secundario;
+        background: $color-terciario;
         border: 1px solid #333;
         border-radius: 6px;
     }
@@ -54,7 +55,7 @@
 
     button {
         border: none;
-        background: dodgerblue;
+        background: $color-secundario;
         border-radius: 5px;
         padding: 10px 16px;
         font-weight: 600;
@@ -69,15 +70,7 @@
     padding: 30px;
     text-align: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tabletYdesktop) {
         padding: 30px;
-    }
-}
-
-a {
-    button {
-        p {
-            color: #000005;
-        }
     }
 }

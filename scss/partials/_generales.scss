@@ -1,22 +1,22 @@
-/*general*/
+/*BODY*/
 * {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: $fuente-principal;
 }
 
-/*body*/
 body {
-    background-image: linear-gradient(to right top, #33202a, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, #009186);
+    background-image: linear-gradient(to right top, $color-secundario, #4f3341, #6e4659, #8e5b72, #b0708c, #b479a1, #b484b7, #af90cc, #7995d3, #3398c7, #0097ac, $color-primario);
     display: grid;
     margin: 0%;
     padding: 0%;
     min-height: 100vh;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tabletYdesktop) {
         padding: 100px 0 0 0;
     }
 }
 
-/*main*/
+
+/*MAIN*/
 main {
     width: 100%;
     padding: 130px 35px;
@@ -24,7 +24,7 @@ main {
     justify-content: center;
     justify-self: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tabletYdesktop) {
         width: 75%;
         padding: 2% 35px;
     }
@@ -32,28 +32,31 @@ main {
 
 h1 {
     text-align: center;
-    color: #000005;
+    color: $color-secundario;
+    ;
 }
 
 h2 {
     text-align: center;
-    color: #434343;
+    color: $color-terciario;
 }
 
 h3,
 h4 {
-    color: #33202A;
     text-align: center;
+    color: $color-terciario;
 
 }
 
-/*buscador*/
+p {
+    color: $color-terciario;
+}
+
+
+/*BUSCADOR*/
 .buscador {
-    display: grid;
-    justify-self: center;
-    height: 40px;
+    @include buscador-mix;
     margin: 20px 0;
-    position: relative;
 
     input[type="text"] {
         border-radius: 15px;
@@ -68,11 +71,8 @@ h4 {
         border-bottom-right-radius: 15px;
     }
 
-    @media screen and (min-width: 1024px) {
-        display: grid;
-        justify-self: center;
-        height: 40px;
-        position: relative;
+    @media screen and (min-width: $tabletYdesktop) {
+        @include buscador-mix;
 
         input [type="text"] {
             border-radius: 15px;
@@ -86,7 +86,7 @@ h4 {
 }
 
 
-/*social icons*/
+/*SOCIAL ICONS*/
 .social-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -115,7 +115,7 @@ h4 {
 
 .fa-facebook {
     background: #3B5998;
-    color: white;
+    color: $color-terciario;
 }
 
 .fa-twitter {
@@ -123,18 +123,19 @@ h4 {
 }
 
 .fa-instagram {
-    color: white;
+    color: $color-terciario;
 }
 
 .fa-reddit {
     color: orangered;
 }
 
+
 /*INDUSTRIAS*/
 
 .cards__industria {
-    background-color: #33202A;
-    color: white;
+    background-color: $color-secundario;
+    color: $color-terciario;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     width: fit-content;
     max-width: 100%;
@@ -148,7 +149,7 @@ h4 {
     }
 
     h2 {
-        color: #009186;
+        color: $color-primario;
     }
 }
 
@@ -166,7 +167,7 @@ h4 {
     gap: 15px;
     align-items: center;
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $tabletYdesktop) {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         padding-bottom: 5%;
@@ -189,6 +190,7 @@ h4 {
     p {
         font-size: 16px;
         line-height: 1.5;
+        color: $color-terciario;
     }
 }
 
@@ -209,19 +211,161 @@ h4 {
     gap: 15px;
     align-items: center;
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: $tabletYdesktop) {
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         padding-bottom: 5%;
     }
 }
 
+.h2__ind {
+    padding: 20px 0 70px 0px;
+}
+
 ul {
     li {
         list-style: none;
+        color: $color-terciario;
     }
 }
 
-.h2__ind {
-    padding: 20px 0 70px 0px;
+/*FOOTER*/
+#main-footer {
+    color: $color-terciario;
+    background-color: $color-secundario;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    height: fit-content;
+    align-self: end;
+    padding: 40px 0 20px 0;
+    grid-row-gap: 20px;
+
+    @media screen and (min-width: $tabletYdesktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+.h4 {
+    font-size: 20px;
+}
+
+.footer1 {
+    a {
+        align-self: center;
+        justify-self: center;
+        color: $color-terciario;
+        text-decoration: none;
+    }
+}
+
+.footer2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: left;
+
+    a {
+        align-self: center;
+        justify-self: center;
+        color: $color-terciario;
+        text-decoration: none;
+    }
+
+}
+
+.footer3 {
+    @include footer-mix;
+
+    @media screen and (min-width: $tabletYdesktop) {
+        display: none;
+    }
+
+}
+
+.footer4 {
+    display: none;
+
+    @media screen and (min-width: $tabletYdesktop) {
+        @include footer-mix;
+    }
+
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    position: initial;
+    @include header-mix;
+    opacity: 0.9;
+
+    a {
+        justify-self: start;
+    }
+
+    @media screen and (min-width: $tabletYdesktop) {
+        width: 70%;
+        position: fixed;
+        @include header-mix;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
+
+
+.navbar {
+    background-color: $color-primario;
+    padding: 0;
+    min-height: 90px;
+
+    @media screen and (min-width: $tabletYdesktop) {
+        background-color: $color-primario;
+    }
+
+    .navbar-toggler {
+        color: $color-terciario;
+    }
+}
+
+.navbar-collapse {
+    li {
+        a {
+            background-color: $color-primario;
+            color: $color-terciario !important;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            border: none;
+            border-radius: 15px;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: #80ADC1;
+            }
+        }
+    }
+}
+
+.container-fluid {
+    height: 100%;
+
+    @media screen and (min-width: $tabletYdesktop) {
+        width: 50%;
+    }
+}
+
+.navbar-brand {
+    height: 100%;
+    width: 100px;
+
+    img {
+        width: 90%;
+        height: 90%;
+
+    }
 }

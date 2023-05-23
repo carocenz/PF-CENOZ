@@ -8,7 +8,8 @@
     justify-items: center;
     align-items: center;
     padding: 50px 0 50px 0;
-    @media screen and (min-width: 1024px) {
+
+    @media screen and (min-width: $tabletYdesktop) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -28,8 +29,9 @@ img {
 }
 
 .offline {
-    color: #33202A;
+    color: $color-secundario;
+
     :hover {
-        color: #009186;
+        color: $color-primario;
     }
 }

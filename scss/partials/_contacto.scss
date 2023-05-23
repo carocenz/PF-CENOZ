@@ -3,7 +3,8 @@
     padding: 30px;
     width: 100%;
     text-align: left;
-    background-color: #009186;
+    background-color: $color-primario;
+    color: $color-terciario;
     margin-top: 30px;
     margin-bottom: 15px;
     display: grid;
@@ -16,9 +17,11 @@
         "dni"
         "mensaje"
         "send-button";
-    div, textarea {
+
+    div,
+    textarea {
         input {
-            border:none;
+            border: none;
             width: 100%;
             border-radius: 6px;
             padding: 10px;
@@ -28,13 +31,14 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $tabletYdesktop) {
     #form {
         border-radius: 12px;
         padding: 30px;
         width: 100%;
         text-align: left;
-        background-color: #009186;
+        background-color: $color-primario;
+        color: $color-terciario;
         margin-top: 30px;
         margin-bottom: 15px;
         display: grid;
@@ -45,9 +49,11 @@
             "telefono dni"
             "mensaje mensaje"
             "send-button send-button";
-        div, textarea {
+
+        div,
+        textarea {
             input {
-                border:none;
+                border: none;
                 width: 100%;
                 border-radius: 6px;
                 padding: 10px;
@@ -56,33 +62,38 @@
             }
         }
     }
-} 
+}
 
 
 .mensaje {
     grid-area: mensaje;
 }
+
 .nombre {
     grid-area: nombre;
 }
+
 .email {
     grid-area: email;
 }
+
 .telefono {
     grid-area: telefono;
 }
+
 .dni {
     grid-area: dni;
 }
 
 
 
-.form-box{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-row-gap:6px;
+.form-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 6px;
+
     label {
-        padding:5px;    
+        padding: 5px;
     }
 }
 
@@ -90,11 +101,11 @@
     width: fit-content;
     justify-self: end;
     margin: 15px 0 0 0;
-    padding:10px 20px;
-    border:none;
-    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    background-color: $color-terciario;
     font-weight: bold;
-    color:#333;
+    color: #333;
     border-radius: 6px;
     grid-area: send-button;
 }
